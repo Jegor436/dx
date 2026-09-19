@@ -157,5 +157,66 @@
 
 #7.uzd "Klase "Divritenis""
 
+# class Divritenis:
+#     def __init__(self, marka, atrums=0):
+#         self.marka = marka
+#         self.atrums = atrums
+
+#     def paatrinat(self, solis):
+#         self.atrums += solis
+
+#     def bremzet(self, solis):
+#         self.atrums -= solis
+#         if self.atrums > 0:
+#             print(self.atrums)
+#         else:
+#             print("Velosipēds nekustas")
+    
+#     def paraditInfo(self):
+#         print(f'Marka: {self.marka}')
+#         print(f'Ātrums: {self.atrums} km/h')
+
+# divritenis = Divritenis("Scott", 20)
+# divritenis.paatrinat(5) 
+# divritenis.paraditInfo()
+
+# divritenis.bremzet(10)  
+# divritenis.paraditInfo()
+
+
+#8.uzd "Klases "Transports", "Auto" un "Motocikls""
+
+# class Transports:
+#     def __init__(self, marka):
+#         self.marka = marka
+
+#     def kusteties(self):
+#         print("Transports kustas")
+
+# class Auto(Transports):
+#     def __init__(self, marka):
+#         super().__init__(marka)
+
+#     def kusteties(self):
+#         print("Auto brauc")
+
+# class Motocikls(Transports):
+#      def __init__(self, marka):
+#           super().__init__(marka)
+
+#      def kusteties(self):
+#         print("Motocikls brauc")
+
+# transports = Transports("Transports")
+# transports.kusteties()
+# auto = Auto("BMW")
+# auto.kusteties()
+# motocikls = Motocikls("Kawasaki")
+# motocikls.kusteties()
+
+
+#9.1.uzd "Punkts un nogrieznis"
+
 #...
+
                 
