@@ -217,6 +217,78 @@
 
 #9.1.uzd "Punkts un nogrieznis"
 
-#...
+# import math
+# class Punkts:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+# class Linija:
+#     def __init__(self, punkts1, punkts2):
+#         self.punkts1 = punkts1
+#         self.punkts2 = punkts2
+        
+#     def garums(self):
+#         dx = self.punkts1.x - self.punkts2.x
+#         dy = self.punkts1.y - self.punkts2.y
+#         return math.sqrt(dx**2 + dy**2)
+
+#     def vaiPieder(self, punkts):
+#         attalums1 = math.sqrt((punkts.x - self.punkts1.x)**2 + (punkts.y - self.punkts1.y)**2)
+#         attalums2 = math.sqrt((self.punkts2.x - punkts.x)**2 + (self.punkts2.y - punkts.y)**2)
+#         return math.isclose(attalums1 + attalums2, self.garums())
+
+# p1 = Punkts(2, 0)
+# p2 = Punkts(0, 0)
+# p3 = Punkts(5, 0)
+# p4 = Punkts(2, 3)
+# linija = Linija(p1, p2)
+
+# print(f'Līnijas nogriežņa garums: {linija.garums()}')
+
+# print(f'Vai punkts (2, 0) pieder nogrieznim? {linija.vaiPieder(p1)}')
+# print(f'Vai punkts (0, 0) pieder nogrieznim? {linija.vaiPieder(p2)}')
+# print(f'Vai punkts (5, 0) pieder nogrieznim? {linija.vaiPieder(p3)}')
+# print(f'Vai punkts (2, 3) pieder nogrieznim? {linija.vaiPieder(p4)}')
+
+
+#9.2.uzd "Klase "Bibliotēka""
+
+# class Biblioteka:
+#     def __init__(self):
+#         self.gramatas = []
+
+#     def pievienotGramatu(self, nosaukums):
+#         self.gramatas.append(nosaukums)
+#         print(f'Grāmata {nosaukums} ir pievienota.')
+
+#     def iznemtGramatu(self, nosaukums):
+#         if nosaukums in self.gramatas:
+#             self.gramatas.remove(nosaukums)
+#             print(f'Grāmata {nosaukums} izņemts no bibliotēkas.')
+#         else :
+#             print(f'Kļūda: Grāmata {nosaukums} netika atrasta.')
+
+#     def paraditGramatas(self):
+#         if not self.gramatas:
+#             print("Bibliotēkā nav grāmatas.")
+#         else:
+#             print("Bibliotēkā esošās grāmatas:")
+#             for gramata in self.gramatas:
+#                 print(f' - {gramata}')
+
+# biblioteka = Biblioteka()
+
+# biblioteka.pievienotGramatu("Mērnieku laiki")
+# biblioteka.pievienotGramatu("Nāves ēnā")
+# biblioteka.pievienotGramatu("Straumēni")
+
+# biblioteka.paraditGramatas()
+
+# biblioteka.iznemtGramatu("Nāves ēnā")
+
+# biblioteka.iznemtGramatu("Harijs Poters")
+
+# biblioteka.paraditGramatas()
 
                 
