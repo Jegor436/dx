@@ -1,0 +1,91 @@
+#1. Saraksta izveidošana --------------------------------------------------------------
+
+# augli = ["banans", "abols", "bumbieris", "apelsins", "citrons"]
+# print(augli[0])
+# print(augli[4])
+
+#2. Elementu pievienošana -------------------------------------------------------------
+
+# skaitli = [10, 20, 30]
+# skaitli.append(40)
+# skaitli.insert(2, 15)
+
+# print(skaitli)
+
+#3. Elementu dzēšana -------------------------------------------------------------------
+
+# krasas = ["sarkana", "zaļa", "zila", "dzeltena"]
+# del krasas[1]
+# del krasas[2]
+
+# print(krasas)
+
+#4. Skaitļu summa un vidējais ----------------------------------------------------------
+
+# skaitli = [5, 10, 15, 20, 25]
+# summa = sum(skaitli)
+# videjais = sum(skaitli) / len(skaitli)
+# minimalais = min(skaitli)
+# maksimalais = max(skaitli)
+
+# print(summa)
+# print(videjais)
+# print(minimalais)
+# print(maksimalais)
+
+#5. Pāra un nepāra skaitļi -------------------------------------------------------------
+
+# skaitli = [1, 4, 7, 10, 13, 16, 19, 22]
+# para = [x for x in skaitli if x % 2 == 0]
+# nepara = [x for x in skaitli if x %2 != 0]
+
+# print(para)
+# print(nepara)
+
+#6. Saraksta kārtošana -----------------------------------------------------------------
+
+# atzimes = [7, 10, 5, 8, 9, 6]
+# atzimes.sort()
+# atzimes.sort(reverse=True)
+
+# print(atzimes)
+
+#7. Elementu meklēšana -----------------------------------------------------------------
+
+# vardi = ["Anna", "Jānis", "Pēteris", "Laura", "Marta"]
+# vards = input("Ievadi vārdu: ")
+# if vards in vardi:
+#     print(vards)
+# else:
+#     print("Vārds nav atrasts")    
+
+#8. Dublikātu skaitīšana ---------------------------------------------------------------
+
+# skaitli = [2, 3, 2, 5, 3, 2, 7, 5]
+# print(skaitli.count(2))
+# print(skaitli.count(3))
+# print(skaitli.count(5))
+# print(skaitli.count(7))
+
+#9. Otrais lielākais skaitlis ----------------------------------------------------------
+
+# skaitli = [12, 45, 23, 67, 67, 34, 56]
+# skaitlis = sorted(list(set(skaitli)), reverse=True)
+# if len(skaitlis) >= 2:
+#     otrais = skaitlis[1]
+#     print(otrais)
+# else:
+#     print("Nav")
+
+#10. Skolēnu atzīmju analīze -----------------------------------------------------------
+
+atzimes = [5, 3, 8, 6, 10]
+videjais = print(sum(atzimes) / len(atzimes))
+maks = print(max(atzimes))
+mini = print(min(atzimes))
+skaits = print(len(atzimes) >= 8)
+
+
+
+
+
