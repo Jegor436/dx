@@ -1,3 +1,5 @@
+#VĀRDNĪCAS ===================================================
+
 # skolens_1 = {"vards": "Anna", "vecums": 14, "klase": "8A"}
 # skolens_2 = {"vards": "Jānis", "vecums": 15, "klase": "8B"}
 
@@ -125,6 +127,150 @@
 
 #----------------------------------------------
 
-teksts = "Pieauguša mājas kaķa vidējais kopējais garums (no deguna gala līdz astes galam) ir aptuveni 50 centimetri."
-lll = list(teksts)
-print(lll)
+# teksts = "Pieauguša mājas kaķa vidējais kopējais garums (no deguna gala līdz astes galam) ir aptuveni 50 centimetri."
+# lll = list(teksts)
+
+# skaits = {}
+# for simbols in lll:
+#     if simbols in skaits.keys():
+#         skaits[simbols] += 1
+#     else:
+#         skaits[simbols] = 1
+
+# kopa = len(lll)
+# print("Kopējais simbolu skaits:", kopa)
+# print()
+
+# for simbols, reizes in skaits.items():
+#     relativais = reizes / kopa
+#     procenti = relativais * 100
+#     print(f"Simbols '{simbols}', Absolūtais skaits {reizes}, Relatīvais biežums {relativais:.3f} ({procenti:.1f}%)")
+
+#------------------------------------------------
+
+# tests_1  = {"Anna": 7, "Jānis": 6, "Laura": 8, "Mārtiņš": 7, "Elīna": 9}
+# tests_2  = {"Anna": 9, "Jānis": 6, "Laura": 7, "Mārtiņš": 8, "Elīna": 9}
+
+# mainas = {
+#     atslega: (tests_1[atslega], tests_2[atslega])
+#       for atslega in tests_1.keys() & tests_2.keys()
+#       if tests_1[atslega] != tests_2[atslega]
+# }
+
+# print(mainas)
+
+#KOPAS ==========================================
+#1.uzd. -----------------------------------------
+
+# vards = input("Ievadi vārdu: ")
+
+# dazadi_simboli = set(vards)
+# skaits = len(dazadi_simboli)
+# print(dazadi_simboli)
+# print(skaits)
+
+#2.uzd. -----------------------------------------
+
+# teksts = input("Ievadi tekstu: ")
+
+# dazadi_simboli = set(teksts)
+# skaits = len(dazadi_simboli)
+# print(dazadi_simboli)
+# print(skaits)
+
+#3.uzd. -----------------------------------------
+
+# skaitli = input("Ievadi veselus skaitļus: ")
+
+# dazadi_skaitli = set(skaitli)
+# dazadi_skaitli = sorted(dazadi_skaitli)
+# skaits = len(dazadi_skaitli)
+# print(dazadi_skaitli)
+# print(skaits)
+
+#4.uzd. ------------------------------------------
+
+# skaitlu_virkne = input("Ievadi veselus skaitļus: ")
+# skaitlis = input("Ievadi skaitlis: ")
+
+# if skaitlis in skaitlu_virkne:
+#     print("YES")
+# else:
+#     print("NO")
+
+#5.uzd. -----------------------------------------
+
+# A = {1, 2, 3, 4, 5}
+# B = {3, 4, 5, 6, 7}
+
+# visi = (A | B)
+# skelums = (A & B)
+# starpiba = (A - B)
+
+# print("Union: ", visi)
+# print("Intersection: ", skelums)
+# print("Difference: ", starpiba)
+
+#6.uzd. ------------------------------------------
+
+# A = {2, 3}
+# B = {1, 2, 3, 4, 5}
+
+# if A.issubset(B):
+#     print("YES")
+# else:
+#     print("NO")
+
+#7.uzd. ------------------------------------------
+
+# vards_1 = input("Ievadi pirmo vārdu: ")
+# vards_2 = input("Ievadi otro vārdu: ")
+
+# skelums = set(vards_1) & set(vards_2)
+# for skelums in sorted(skelums):
+#     print(skelums)
+
+#8.uzd. ------------------------------------------
+
+# vards = input("Ievadi vārdu: ")
+
+# burti = set(vards)
+# skaits = len(burti)
+# print(burti)
+# print(skaits)
+
+#9.uzd. ------------------------------------------
+
+# vards = input("Ievadi vārdu: ")
+
+# patskani = {"a", "e", "i", "o", "u"}
+# skaits = set(vards)
+
+# if patskani.issubset(skaits):
+#     print("YES")
+# else:
+#     print("NO")
+
+#10.uzd. ----------------------------------------
+
+# teikums = "Šis ir tests un šis ir tikai tests".lower()
+
+# vardi = [vards for vards in teikums.split()]
+# unikali_vardi = set(vardi)
+# skaits = len(unikali_vardi)
+# print(unikali_vardi)
+# print(skaits)
+
+#11.uzd. ----------------------------------------
+
+# faila_nosaukums = input("Ievadi faila nosaukumu: ").strip()
+
+# unikali_skaitli = set()
+# with open(faila_nosaukums, "r", encoding="utf-8") as fails:
+#     for rinda in fails:
+#         rinda = rinda.strip()
+#         if rinda:
+#             unikali_skaitli.add(int(rinda))
+
+# print(len(unikali_skaitli))
+
